@@ -1,0 +1,107 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "pricing": "Precios",
+    "contact": "Contacto",
+    "login": "Iniciar Sesión",
+    "getStarted": "Comenzar"
+  },
+  "home": {
+    "hero": {
+      "badge": "Confiado por 150+ empresas en",
+      "title": "Automatización Empresarial Sin Código",
+      "subtitle": "Transforma procesos manuales en workflows automatizados. Ahorra tiempo, reduce errores y escala tu operación.",
+      "startFree": "Comenzar Gratis",
+      "viewDemo": "Ver Demo"
+    },
+    "features": {
+      "title": "Todo lo que Necesitas para Automatizar",
+      "subtitle": "Herramientas poderosas y fáciles de usar para transformar tu operación",
+      "contactCenter": {
+        "title": "Contact Center",
+        "description": "Automatiza respuestas y gestión de clientes"
+      },
+      "finance": {
+        "title": "Finanzas",
+        "description": "Procesa facturas y pagos automáticamente"
+      },
+      "integrations": {
+        "title": "Integraciones",
+        "description": "Conecta todas tus herramientas favoritas"
+      }
+    },
+    "pricing": {
+      "title": "Precios Transparentes",
+      "subtitle": "Planes que crecen contigo. Sin costos ocultos.",
+      "taxNote": "Precios en {currency} • {taxRate}% impuestos incluidos",
+      "plans": {
+        "starter": {
+          "name": "Starter",
+          "price": "Gratis",
+          "description": "Perfecto para equipos pequeños",
+          "features": {
+            "users": "Hasta 5 usuarios",
+            "executions": "1,000 ejecuciones/mes",
+            "workflows": "10 workflows activos",
+            "support": "Soporte estándar"
+          },
+          "button": "Comenzar Ahora"
+        },
+        "pro": {
+          "name": "Pro", 
+          "price": "$29 USD",
+          "description": "Para empresas en crecimiento",
+          "popular": "Más Popular",
+          "features": {
+            "users": "Usuarios ilimitados",
+            "executions": "10,000 ejecuciones/mes",
+            "workflows": "100 workflows activos",
+            "support": "Soporte prioritario"
+          },
+          "button": "Elegir Plan"
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "$99 USD",
+          "description": "Para grandes organizaciones",
+          "features": {
+            "unlimited": "Todo ilimitado",
+            "support": "Soporte dedicado 24/7",
+            "sla": "SLA garantizado",
+            "customization": "Personalización completa"
+          },
+          "button": "Elegir Plan"
+        }
+      }
+    },
+    "localMarket": {
+      "title": "Agente Virtual IA en {country}",
+      "currency": "Facturación local",
+      "support": "Horario de soporte",
+      "regulations": "Regulaciones soportadas",
+      "compliance": "Cumplimos con: {regulations}",
+      "contactTeam": "Contactar Equipo Local"
+    },
+    "cta": {
+      "title": "¿Listo para Automatizar tu Operación?",
+      "subtitle": "Únete a las {count}+ empresas en {country} que ya confían en Agente Virtual IA.",
+      "startTrial": "Comenzar Prueba Gratuita",
+      "scheduleDemo": "Agendar Demo"
+    }
+  },
+  "contact": {
+    "header": {
+      "badge": "Contacta nuestro equipo en",
+      "title": "¿Listo para Transformar tu Negocio?",
+      "subtitle": "Ponte en contacto con nuestros expertos locales y descubre cómo Agente Virtual IA puede revolucionar tus operaciones."
+    },
+    "form": {
+      "title": "Contactar Nuestro Equipo",
+      "description": "Completa el formulario a continuación y te responderemos en menos de 24 horas.",
+      "submit": "Enviar Mensaje",
+      "submitting": "Enviando...",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Error al enviar mensaje"
+    }
+  }
+}
