@@ -15,6 +15,7 @@ import {
 } from 'lucide-react'
 import Link from 'next/link'
 import { getCountryConfig } from '@/i18n/config'
+import { StructuredData } from '@/components/structured-data'
 
 export default function HomePage() {
   const t = useTranslations('home')
@@ -82,6 +83,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <StructuredData />
       <MarketingHeader />
       
       <main className="flex-1">
