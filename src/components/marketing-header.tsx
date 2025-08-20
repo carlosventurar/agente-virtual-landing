@@ -6,120 +6,97 @@ import { Button } from '@/components/ui/button'
 import { 
   Globe, 
   Menu,
-  X
+  X,
+  Bot
 } from 'lucide-react'
 import Link from 'next/link'
 import { getCountryConfig } from '@/i18n/config'
 
 export function MarketingHeader() {
-  const t = useTranslations('navigation')
+  const t = useTranslations()
   const locale = useLocale()
   const countryConfig = getCountryConfig(locale)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const toggleLanguage = () => {
+    // In a real implementation, you would handle language switching here
+    console.log('Language toggle clicked')
+  }
+
   const navigationItems = [
-    { name: t('home'), href: '/' },
-    { name: t('pricing'), href: '/pricing' },
-    { name: t('contact'), href: '/contact' }
+    { name: t('navigation.home'), href: '#' },
+    { name: t('navigation.howItWorks'), href: '#como-funciona' },
+    { name: t('navigation.pricing'), href: '#precios' },
+    { name: t('navigation.contact'), href: '#contacto' }
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto px-4">
-        <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-violet-600 text-white">
-                <span className="text-sm font-bold">IA</span>
-              </div>
-              <div className="hidden md:block">
-                <div className="text-lg font-semibold">Agente Virtual IA</div>
-                <div className="text-xs text-muted-foreground">Automatización Empresarial</div>
-              </div>
+    <header className="container mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="flex items-center gap-2">
+        <div className="bg-pink-500 p-2 rounded-lg">
+          <Bot size={24} className="text-white" />
+        </div>
+        <span className="text-xl font-semibold text-white">Asistente Virtual IA</span>
+      </div>
+      <div className="flex items-center gap-3">
+        <button 
+          onClick={toggleLanguage} 
+          className="flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors duration-200"
+          aria-label={locale === 'es' ? 'Switch to English' : 'Cambiar a Español'}
+        >
+          <Globe size={20} className="text-white" />
+        </button>
+        <nav className="hidden md:flex gap-6">
+          {navigationItems.map((item) => (
+            <Link key={item.name} href={item.href} className="text-white/80 hover:text-white">
+              {item.name}
             </Link>
-          </div>
+          ))}
+        </nav>
+        <Link href="#contacto" className="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg text-sm hidden md:block">
+          {t('home.hero.startFree')}
+        </Link>
+        
+        {/* Mobile Menu Button */}
+        <Button
+          variant="outline"
+          size="sm"
+          className="md:hidden bg-white/10 hover:bg-white/20 border-white/30 text-white"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
+        </Button>
+      </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="absolute top-full left-0 right-0 md:hidden bg-purple-900/95 backdrop-blur-sm border-t border-white/10">
+          <div className="container mx-auto px-4 py-4 space-y-4">
+            {/* Mobile Navigation */}
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                className="block px-3 py-2 text-base font-medium text-white/80 hover:text-white transition-colors"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-          </nav>
-
-          {/* Desktop CTAs */}
-          <div className="hidden md:flex items-center space-x-4">
-            {/* Language Selector */}
-            <div className="flex items-center gap-2 px-3 py-1 border rounded-md text-sm">
-              <Globe className="h-4 w-4" />
-              {countryConfig.country}
+            
+            {/* Mobile CTA */}
+            <div className="px-3 py-2">
+              <Link 
+                href="#contacto" 
+                className="block w-full text-center bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg text-sm"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {t('home.hero.startFree')}
+              </Link>
             </div>
-
-            {/* Login Button */}
-            <Button variant="outline" asChild>
-              <Link href="https://app.agentevirtualia.com/auth">
-                {t('login')}
-              </Link>
-            </Button>
-
-            {/* Get Started Button */}
-            <Button asChild>
-              <Link href="https://app.agentevirtualia.com/auth">
-                {t('getStarted')}
-              </Link>
-            </Button>
           </div>
-
-          {/* Mobile Menu Button */}
-          <Button
-            variant="outline"
-            size="sm"
-            className="md:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
-          </Button>
         </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t">
-            <div className="py-4 space-y-4">
-              {/* Mobile Navigation */}
-              {navigationItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-              
-              {/* Mobile CTAs */}
-              <div className="px-3 py-2 space-y-3">
-                <Button variant="outline" className="w-full" asChild>
-                  <Link href="https://app.agentevirtualia.com/auth" onClick={() => setMobileMenuOpen(false)}>
-                    {t('login')}
-                  </Link>
-                </Button>
-                <Button className="w-full" asChild>
-                  <Link href="https://app.agentevirtualia.com/auth" onClick={() => setMobileMenuOpen(false)}>
-                    {t('getStarted')}
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
+      )}
     </header>
   )
 }

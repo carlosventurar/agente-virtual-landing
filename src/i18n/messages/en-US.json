@@ -1,78 +1,169 @@
 {
   "navigation": {
     "home": "Home",
+    "howItWorks": "How it works",
     "pricing": "Pricing",
     "contact": "Contact",
     "login": "Sign In",
     "getStarted": "Get Started"
   },
+  "notificationBar": "🎉 187 hours automated this month → Want yours?",
   "home": {
     "hero": {
       "badge": "Trusted by 150+ companies in",
-      "title": "No-Code Business Automation",
-      "subtitle": "Transform manual processes into automated workflows. Save time, reduce errors, and scale your operation.",
-      "startFree": "Start Free",
-      "viewDemo": "View Demo"
-    },
-    "features": {
-      "title": "Everything You Need to Automate",
-      "subtitle": "Powerful and easy-to-use tools to transform your operation",
-      "contactCenter": {
-        "title": "Contact Center",
-        "description": "Automate responses and customer management"
+      "title": "Automate your tasks",
+      "subtitle": "in just 72h",
+      "description": "Stop wasting time. Your AI virtual assistant does it for you without lifting a finger, no coding or hiring needed.",
+      "startFree": "Schedule free demo",
+      "viewDemo": "View on WhatsApp",
+      "howItWorks": "Learn how it works",
+      "benefits": {
+        "benefit1": "No coding required",
+        "benefit2": "No extra employees",
+        "benefit3": "Results in days"
       },
-      "finance": {
-        "title": "Finance",
-        "description": "Process invoices and payments automatically"
-      },
-      "integrations": {
-        "title": "Integrations",
-        "description": "Connect all your favorite tools"
+      "stats": {
+        "clients": "Active clients",
+        "availability": "Availability",
+        "satisfaction": "Satisfaction"
       }
+    },
+    "wastingTime": {
+      "title": "🚨 What's holding you back...",
+      "problem1": "Time wasted on tasks that don't scale",
+      "problem2": "Human errors and inconsistencies",
+      "problem3": "Impossible to scale without hiring more"
+    },
+    "isForYou": {
+      "title": "Is it for you?",
+      "point1": "You do repetitive tasks that consume your time",
+      "point2": "You'd like to scale without adding more people",
+      "point3": "You don't want to waste time learning tools",
+      "point4": "You want more freedom to focus on what's important",
+      "cta": "Yes, that's me! I want to stop wasting time right now 🚀"
+    },
+    "howItWorks": {
+      "title": "How does it work?",
+      "subtitle": "Just 3 steps to forget about manual work forever",
+      "step1": {
+        "title": "Choose your plan",
+        "description": "Select the plan that best fits your needs and operation volume."
+      },
+      "step2": {
+        "title": "We connect with you",
+        "description": "We set up your automated workflows by connecting all your applications without technical complexity."
+      },
+      "step3": {
+        "title": "Start delegating",
+        "description": "Your virtual assistant starts working automatically while you focus on growing your business."
+      },
+      "cta": "I want it done for me"
+    },
+    "industries": {
+      "title": "Solutions by industry",
+      "subtitle": "Adapted to the specific challenges of your sector",
+      "ecommerce": {
+        "title": "E-commerce",
+        "description": "We automate tasks, emails and more for your store"
+      },
+      "health": {
+        "title": "Healthcare",
+        "description": "Appointment management, reminders and patient follow-up"
+      },
+      "education": {
+        "title": "Education",
+        "description": "Automation of enrollments, student tracking"
+      },
+      "services": {
+        "title": "Services",
+        "description": "Customer management, payments and automatic communication"
+      }
+    },
+    "testimonials": {
+      "title": "Real businesses. Real results.",
+      "subtitle": "Real experiences from those who are already growing with us",
+      "testimonial1": {
+        "name": "María González",
+        "role": "Marketing Director",
+        "company": "CreativeAgency",
+        "text": "\"Since implementing the virtual assistant, we have increased lead generation by 40% and our team has recovered more than 15 hours weekly.\""
+      },
+      "testimonial2": {
+        "name": "Carlos Rodríguez",
+        "role": "CEO of MyStore",
+        "company": "MyStore",
+        "text": "\"Automation allowed us to manage orders 24/7 and automatically follow up with customers. Sales increased by 28% in just 2 months.\""
+      },
+      "testimonial3": {
+        "name": "Ana Martínez",
+        "role": "Business Consultant",
+        "company": "ConsultProLLC",
+        "text": "\"My virtual assistant manages my schedule and qualifies leads while I sleep. Productivity increased by 60% and I finally got my time back.\""
+      },
+      "metric": "🎉 187 hours automated this month alone",
+      "rating": "⭐ 5.0 average rating"
     },
     "pricing": {
-      "title": "Transparent Pricing",
-      "subtitle": "Plans that grow with you. No hidden costs.",
-      "taxNote": "Prices in {currency} • {taxRate}% taxes included",
+      "title": "Plans designed for your business",
+      "subtitle": "Flexible solutions for every stage of your growth",
       "plans": {
-        "starter": {
-          "name": "Starter",
-          "price": "Free",
-          "description": "Perfect for small teams",
+        "basic": {
+          "name": "Basic",
+          "price": "USD $180",
+          "period": "/month",
+          "description": "For growing businesses that want to automate essential tasks",
           "features": {
-            "users": "Up to 5 users",
-            "executions": "1,000 executions/month",
-            "workflows": "10 active workflows",
-            "support": "Standard support"
+            "hours": "20 hours of monthly assistance",
+            "channel": "1 WhatsApp or email channel",
+            "responses": "Pre-configured responses",
+            "support": "Email support"
           },
-          "button": "Get Started"
+          "trial": "14-day trial | 1 user | Support included",
+          "cta": "Try automating your first task today"
         },
-        "pro": {
-          "name": "Pro", 
-          "price": "$29 USD",
-          "description": "For growing businesses",
-          "popular": "Most Popular",
+        "intermediate": {
+          "name": "Intermediate",
+          "price": "USD $340",
+          "period": "/month",
+          "description": "Ideal for companies looking to scale their automation",
+          "popular": "Popular",
           "features": {
-            "users": "Unlimited users",
-            "executions": "10,000 executions/month",
-            "workflows": "100 active workflows",
-            "support": "Priority support"
+            "hours": "50 hours of monthly assistance",
+            "channels": "3 WhatsApp or email channels",
+            "priority": "Priority access 24/7",
+            "crm": "CRM integration",
+            "dashboard": "Custom dashboard",
+            "support": "Priority support 24/7"
           },
-          "button": "Choose Plan"
+          "trial": "14-day trial | 3 users | Preferential support",
+          "cta": "Automate your 3 processes without lifting a finger"
         },
-        "enterprise": {
-          "name": "Enterprise",
-          "price": "$99 USD",
-          "description": "For large organizations",
+        "premium": {
+          "name": "Premium",
+          "price": "USD $640",
+          "period": "/month",
+          "description": "For companies that need advanced and customized solutions",
           "features": {
-            "unlimited": "Everything unlimited",
-            "support": "24/7 dedicated support",
-            "sla": "Guaranteed SLA",
-            "customization": "Full customization"
+            "hours": "100+ hours of monthly assistance",
+            "unlimited": "Unlimited channels",
+            "enterprise": "Enterprise-level support",
+            "integrations": "Advanced integrations",
+            "analytics": "Real-time analytics",
+            "consulting": "Strategic consulting"
           },
-          "button": "Choose Plan"
+          "trial": "14-day trial | 10 users | VIP support",
+          "cta": "Let us do everything for you"
         }
+      },
+      "customPlan": {
+        "title": "Need a customized plan with more hours?",
+        "description": "Schedule a call with our sales team to design and customize a plan that fits your business",
+        "cta": "Inquire now"
       }
+    },
+    "integrations": {
+      "title": "Compatible with your favorite tools. You don't change anything.",
+      "subtitle": "Our virtual assistant is compatible with all your favorite applications, without having to change your way of working"
     },
     "localMarket": {
       "title": "Agente Virtual IA in {country}",
@@ -90,18 +181,47 @@
     }
   },
   "contact": {
-    "header": {
-      "badge": "Contact our team in",
-      "title": "Ready to Transform Your Business?",
-      "subtitle": "Get in touch with our local experts and discover how Agente Virtual IA can revolutionize your operations."
-    },
+    "title": "Just 1 minute to automate your business like the others",
+    "subtitle": "Ask us and we will answer all your questions in less than 12h. No contracts, no risks.",
     "form": {
-      "title": "Contact Our Team",
-      "description": "Fill out the form below and we'll respond within 24 hours.",
-      "submit": "Send Message",
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+1 234 567 8900",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "interest": "What are you interested in?",
+      "interestOptions": {
+        "whatsapp": "WhatsApp Automation",
+        "email": "Email Management",
+        "sales": "Sales Follow-up",
+        "operations": "Operations Automation",
+        "other": "Other inquiry"
+      },
+      "message": "Your inquiry",
+      "messagePlaceholder": "Detail your inquiry here...",
+      "newsletter": "I want to receive news and updates by email",
+      "whatsappPreferred": "I want to schedule directly on WhatsApp",
+      "submit": "Submit inquiry and receive proposal in 24h",
       "submitting": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Error sending message"
+      "success": "Message received!",
+      "successDesc": "We will contact you within the next 24 hours to answer all your questions."
     }
-  }
+  },
+  "footer": {
+    "description": "Your virtual assistant powered by artificial intelligence that works 24/7 so you can focus on what matters.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "cookies": "Cookies",
+    "faq": "FAQ",
+    "contactInfo": "Contact",
+    "businessHours": "Mon - Fri: 9am - 6pm",
+    "copyright": "All rights reserved."
+  },
+  "mobileCta": "📲 Schedule free demo now",
+  "whatsappContact": "Contact us"
 }
