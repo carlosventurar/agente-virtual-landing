@@ -460,161 +460,110 @@ export default function HomePage() {
             </p>
             
             <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {/* Basic Plan */}
+              {/* Launch Plan */}
               <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 flex flex-col transform transition-transform hover:scale-105 hover:shadow-intense">
                 <div className="p-6 border-b border-gray-700">
-                  <p className="uppercase text-xs font-semibold tracking-wider text-pink-500 mb-2">{t('home.pricing.plans.basic.name')}</p>
-                  <h3 className="text-2xl font-bold mb-4">{t('home.pricing.plans.basic.price')}<span className="text-sm text-white/60">{t('home.pricing.plans.basic.period')}</span></h3>
-                  <p className="text-white/70 text-sm">{t('home.pricing.plans.basic.description')}</p>
+                  <p className="uppercase text-xs font-semibold tracking-wider text-pink-500 mb-2">{t('home.pricing.plans.launch.name')}</p>
+                  <h3 className="text-2xl font-bold mb-4">{t('home.pricing.plans.launch.price')}<span className="text-sm text-white/60">{t('home.pricing.plans.launch.period')}</span></h3>
+                  <p className="text-white/70 text-sm">{t('home.pricing.plans.launch.description')}</p>
+                  <p className="text-white/50 text-xs mt-2">{t('home.pricing.plans.launch.hours')} · {t('home.pricing.plans.launch.sla')}</p>
                 </div>
                 
                 <div className="p-6 flex-grow">
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.basic.features.hours')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.basic.features.channel')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.basic.features.responses')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.basic.features.support')}</span>
-                    </li>
+                    {t.raw('home.pricing.plans.launch.features').map((feature: string, index: number) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-white/80 text-sm">{feature}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 
                 <div className="p-6 pt-0">
                   <Button className="w-full bg-pink-500 hover:bg-pink-600 text-white" asChild>
                     <Link href="#contacto">
-                      {t('home.pricing.plans.basic.cta')}
+                      {t('home.pricing.cta')}
                     </Link>
                   </Button>
-                  <p className="text-center text-xs text-white/50 mt-4">
-                    {t('home.pricing.plans.basic.trial')}
-                  </p>
+                  <p className="text-center text-xs text-white/50 mt-4">{t('home.pricing.plans.launch.setup')}</p>
                 </div>
               </div>
               
-              {/* Intermediate Plan */}
+              {/* Growth Plan */}
               <div className="bg-gray-800 rounded-xl overflow-hidden border-2 border-pink-500 flex flex-col relative transform transition-transform hover:scale-105 hover:shadow-intense z-10">
                 <div className="absolute -top-4 right-0 left-0 mx-auto w-max bg-pink-500 text-white px-4 py-1 text-xs font-semibold rounded-full">
-                  {t('home.pricing.plans.intermediate.popular')}
+                  {t('home.pricing.plans.growth.highlightText')}
                 </div>
                 <div className="p-6 border-b border-gray-700">
-                  <p className="uppercase text-xs font-semibold tracking-wider text-pink-500 mb-2">{t('home.pricing.plans.intermediate.name')}</p>
-                  <h3 className="text-2xl font-bold mb-4">{t('home.pricing.plans.intermediate.price')}<span className="text-sm text-white/60">{t('home.pricing.plans.intermediate.period')}</span></h3>
-                  <p className="text-white/70 text-sm">{t('home.pricing.plans.intermediate.description')}</p>
+                  <p className="uppercase text-xs font-semibold tracking-wider text-pink-500 mb-2">{t('home.pricing.plans.growth.name')}</p>
+                  <h3 className="text-2xl font-bold mb-4">{t('home.pricing.plans.growth.price')}<span className="text-sm text-white/60">{t('home.pricing.plans.growth.period')}</span></h3>
+                  <p className="text-white/70 text-sm">{t('home.pricing.plans.growth.description')}</p>
+                  <p className="text-white/50 text-xs mt-2">{t('home.pricing.plans.growth.hours')} · {t('home.pricing.plans.growth.sla')}</p>
                 </div>
                 
                 <div className="p-6 flex-grow">
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.intermediate.features.hours')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.intermediate.features.channels')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.intermediate.features.priority')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.intermediate.features.crm')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.intermediate.features.dashboard')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.intermediate.features.support')}</span>
-                    </li>
+                    {t.raw('home.pricing.plans.growth.features').map((feature: string, index: number) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-white/80 text-sm">{feature}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 
                 <div className="p-6 pt-0">
                   <Button className="w-full bg-pink-500 hover:bg-pink-600 text-white font-bold shadow-lg" asChild>
                     <Link href="#contacto">
-                      {t('home.pricing.plans.intermediate.cta')}
+                      {t('home.pricing.cta')}
                     </Link>
                   </Button>
-                  <p className="text-center text-xs text-white/50 mt-4">
-                    {t('home.pricing.plans.intermediate.trial')}
-                  </p>
+                  <p className="text-center text-xs text-white/50 mt-4">{t('home.pricing.plans.growth.setup')}</p>
                 </div>
               </div>
               
-              {/* Premium Plan */}
-              <div className="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 flex flex-col transform transition-transform hover:scale-105 hover:shadow-intense">
+              {/* Scale Plan */}
+              <div className="bg-gray-800 rounded-xl overflow-hidden border border-purple-500 flex flex-col transform transition-transform hover:scale-105 hover:shadow-intense">
                 <div className="p-6 border-b border-gray-700">
-                  <p className="uppercase text-xs font-semibold tracking-wider text-pink-500 mb-2">{t('home.pricing.plans.premium.name')}</p>
-                  <h3 className="text-2xl font-bold mb-4">{t('home.pricing.plans.premium.price')}<span className="text-sm text-white/60">{t('home.pricing.plans.premium.period')}</span></h3>
-                  <p className="text-white/70 text-sm">{t('home.pricing.plans.premium.description')}</p>
+                  <p className="uppercase text-xs font-semibold tracking-wider text-purple-500 mb-2">{t('home.pricing.plans.scale.name')}</p>
+                  <h3 className="text-2xl font-bold mb-4">{t('home.pricing.plans.scale.price')}<span className="text-sm text-white/60">{t('home.pricing.plans.scale.period')}</span></h3>
+                  <p className="text-white/70 text-sm">{t('home.pricing.plans.scale.description')}</p>
+                  <p className="text-white/50 text-xs mt-2">{t('home.pricing.plans.scale.hours')} · {t('home.pricing.plans.scale.sla')}</p>
+                  <div className="inline-block bg-purple-100 text-purple-700 text-xs px-2 py-1 rounded mt-2">{t('home.pricing.plans.scale.highlightText')}</div>
                 </div>
                 
                 <div className="p-6 flex-grow">
                   <ul className="space-y-3">
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.premium.features.hours')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.premium.features.unlimited')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.premium.features.enterprise')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.premium.features.integrations')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.premium.features.analytics')}</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <CheckCircle size={18} className="text-pink-500 mt-0.5 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{t('home.pricing.plans.premium.features.consulting')}</span>
-                    </li>
+                    {t.raw('home.pricing.plans.scale.features').map((feature: string, index: number) => (
+                      <li key={index} className="flex items-start gap-2">
+                        <CheckCircle size={18} className="text-purple-500 mt-0.5 flex-shrink-0" />
+                        <span className="text-white/80 text-sm">{feature}</span>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 
                 <div className="p-6 pt-0">
-                  <Button className="w-full bg-pink-500 hover:bg-pink-600 text-white" asChild>
+                  <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white" asChild>
                     <Link href="#contacto">
-                      {t('home.pricing.plans.premium.cta')}
+                      {t('home.pricing.cta')}
                     </Link>
                   </Button>
                   <p className="text-center text-xs text-white/50 mt-4">
-                    {t('home.pricing.plans.premium.trial')}
+                    {t('home.pricing.plans.scale.setup')}
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="mt-16 max-w-3xl mx-auto text-center">
-              <p className="inline-block bg-pink-500/10 border border-pink-500/20 rounded-full text-pink-400 px-4 py-1 text-sm font-medium mb-6">
-                {t('home.pricing.customPlan.title')}
-              </p>
-              <p className="text-white/70 mb-8">
-                {t('home.pricing.customPlan.description')}
-              </p>
-              <Button variant="outline" className="bg-white/10 hover:bg-white/20 border-white/20 text-white gap-2" asChild>
-                <Link href="#contacto">
-                  {t('home.pricing.customPlan.cta')} <ChevronRight size={20} />
-                </Link>
-              </Button>
+            <div className="text-center mt-12">
+              <Link 
+                href="/pricing" 
+                className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-lg transition-colors"
+              >
+                Ver todos los planes <ArrowRight size={20} className="ml-2" />
+              </Link>
             </div>
           </div>
         </section>

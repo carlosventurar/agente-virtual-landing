@@ -36,7 +36,7 @@ export default function PricingPage() {
       sla: t('home.pricing.plans.launch.sla'),
       setup: t('home.pricing.plans.launch.setup'),
       description: t('home.pricing.plans.launch.description'),
-      features: t('home.pricing.plans.launch.features')
+      features: t.raw('home.pricing.plans.launch.features')
     },
     {
       name: t('home.pricing.plans.growth.name'),
@@ -46,7 +46,7 @@ export default function PricingPage() {
       sla: t('home.pricing.plans.growth.sla'),
       setup: t('home.pricing.plans.growth.setup'),
       description: t('home.pricing.plans.growth.description'),
-      features: t('home.pricing.plans.growth.features'),
+      features: t.raw('home.pricing.plans.growth.features'),
       highlight: "popular",
       highlightText: t('home.pricing.plans.growth.highlightText')
     },
@@ -58,7 +58,7 @@ export default function PricingPage() {
       sla: t('home.pricing.plans.scale.sla'),
       setup: t('home.pricing.plans.scale.setup'),
       description: t('home.pricing.plans.scale.description'),
-      features: t('home.pricing.plans.scale.features'),
+      features: t.raw('home.pricing.plans.scale.features'),
       highlight: "value",
       highlightText: t('home.pricing.plans.scale.highlightText')
     },
@@ -70,7 +70,7 @@ export default function PricingPage() {
       sla: t('home.pricing.plans.enterprise.sla'),
       setup: t('home.pricing.plans.enterprise.setup'),
       description: t('home.pricing.plans.enterprise.description'),
-      features: t('home.pricing.plans.enterprise.features')
+      features: t.raw('home.pricing.plans.enterprise.features')
     }
   ];
 

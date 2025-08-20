@@ -5,7 +5,11 @@
       "Bash(npm install)",
       "Bash(git add:*)",
       "Bash(git rm:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_snapshot",
+      "mcp__playwright__browser_close",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []
