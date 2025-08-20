@@ -104,62 +104,156 @@
       "rating": "⭐ 5.0 average rating"
     },
     "pricing": {
-      "title": "Plans designed for your business",
-      "subtitle": "Flexible solutions for every stage of your growth",
+      "title": "Managed Plans + AI Systems",
+      "subtitle": "No free plan. Included hours, clear SLA and accelerated go-live.",
+      "promoText": "Promo: −50% setup with 3-month prepayment",
       "plans": {
-        "basic": {
-          "name": "Basic",
-          "price": "USD $180",
+        "launch": {
+          "name": "Launch",
+          "price": "$1,290",
           "period": "/month",
-          "description": "For growing businesses that want to automate essential tasks",
-          "features": {
-            "hours": "20 hours of monthly assistance",
-            "channel": "1 WhatsApp or email channel",
-            "responses": "Pre-configured responses",
-            "support": "Email support"
-          },
-          "trial": "14-day trial | 1 user | Support included",
-          "cta": "Try automating your first task today"
+          "hours": "10 h included",
+          "sla": "48 h SLA",
+          "setup": "Setup $1,490",
+          "description": "Ideal for starting with basic automation",
+          "features": [
+            "1 prod environment + 1 test",
+            "2 base integrations",
+            "1 value dashboard",
+            "Asynchronous support"
+          ]
         },
-        "intermediate": {
-          "name": "Intermediate",
-          "price": "USD $340",
+        "growth": {
+          "name": "Growth",
+          "price": "$2,490",
           "period": "/month",
-          "description": "Ideal for companies looking to scale their automation",
-          "popular": "Popular",
-          "features": {
-            "hours": "50 hours of monthly assistance",
-            "channels": "3 WhatsApp or email channels",
-            "priority": "Priority access 24/7",
-            "crm": "CRM integration",
-            "dashboard": "Custom dashboard",
-            "support": "Priority support 24/7"
-          },
-          "trial": "14-day trial | 3 users | Preferential support",
-          "cta": "Automate your 3 processes without lifting a finger"
+          "hours": "25 h included",
+          "sla": "12 h SLA",
+          "setup": "Setup $2,490",
+          "highlight": "popular",
+          "highlightText": "Best Seller",
+          "description": "For companies looking to scale their automation",
+          "features": [
+            "All Launch + 3 extra integrations",
+            "3–6 managed flows",
+            "2 dashboards (operational + finance)",
+            "Bi-weekly review"
+          ]
         },
-        "premium": {
-          "name": "Premium",
-          "price": "USD $640",
+        "scale": {
+          "name": "Scale",
+          "price": "$3,990",
           "period": "/month",
-          "description": "For companies that need advanced and customized solutions",
-          "features": {
-            "hours": "100+ hours of monthly assistance",
-            "unlimited": "Unlimited channels",
-            "enterprise": "Enterprise-level support",
-            "integrations": "Advanced integrations",
-            "analytics": "Real-time analytics",
-            "consulting": "Strategic consulting"
-          },
-          "trial": "14-day trial | 10 users | VIP support",
-          "cta": "Let us do everything for you"
+          "hours": "45 h included",
+          "sla": "4 h SLA",
+          "setup": "Setup $3,990",
+          "highlight": "value",
+          "highlightText": "Best Value",
+          "description": "Complete solution for complex operations",
+          "features": [
+            "All Growth + process audit",
+            "6–10 orchestrated flows",
+            "Basic data management",
+            "Weekly meeting + extended on-call"
+          ]
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "price": "From $6,500",
+          "period": "/month",
+          "hours": "80 h+",
+          "sla": "1–2 h SLA / 24×7",
+          "setup": "Setup from $6,500",
+          "description": "For organizations with critical needs",
+          "features": [
+            "Multi-region/HA",
+            "SSO/SCIM",
+            "Advanced traceability",
+            "Change Management Board"
+          ]
         }
       },
-      "customPlan": {
-        "title": "Need a customized plan with more hours?",
-        "description": "Schedule a call with our sales team to design and customize a plan that fits your business",
-        "cta": "Inquire now"
-      }
+      "rules": {
+        "title": "Rules",
+        "extraHours": "Extra hours: $95/h (or $80/h with quarterly commitment)",
+        "minContract": "Minimum contract: 3 months",
+        "promoSetup": "Promo: −50% setup with 3-month prepayment"
+      },
+      "includes": {
+        "title": "Includes",
+        "description": "Blueprint + provisioning (prod/test) + base integrations + value dashboards + documentation + go-live support."
+      },
+      "slaInfo": {
+        "title": "SLA",
+        "description": "Response and deployment windows according to plan. 24×7 human support applies only to Enterprise."
+      },
+      "addons": {
+        "title": "Add-ons",
+        "datasync": {
+          "name": "Managed DataSync (Airbyte)",
+          "price": "$390/month",
+          "description": "Up to 10 connectors; then $49/connector."
+        },
+        "dashboards": {
+          "name": "BI Dashboards (Supabase + Metabase)",
+          "price": "$490/month",
+          "description": "2 dashboards + 1 monthly evolution."
+        },
+        "whatsapp": {
+          "name": "WhatsApp/Omnichannel (setup)",
+          "price": "$300 one-time",
+          "description": "Verification + templates + webhooks."
+        },
+        "rag": {
+          "name": "RAG / Knowledge Base",
+          "price": "$590/month",
+          "description": "Up to 5 sources + 1 reindex/month."
+        },
+        "audit": {
+          "name": "Audit & Traceability",
+          "price": "$290/month",
+          "description": "Logs, evidence and compliance KPIs."
+        },
+        "support": {
+          "name": "Extended Hours Support",
+          "price": "$290/month",
+          "description": "Extended coverage (not 24/7)."
+        }
+      },
+      "systemsIA": {
+        "title": "AI Systems (web/mobile)",
+        "subtitle": "We integrate ready-to-operate UI on top of your flows: modules, roles, data and KPIs.",
+        "appLite": {
+          "name": "App-Lite",
+          "setup": "$2,900",
+          "mrr": "$690/month",
+          "description": "1 module (CRUD), 1 role, 2 tables, simple dashboard."
+        },
+        "webApp": {
+          "name": "Web App MVP",
+          "setup": "$6,900",
+          "mrr": "$990/month",
+          "description": "3 modules, 3 roles, 6–8 tables, Auth, files, notifications."
+        },
+        "mobileApp": {
+          "name": "Mobile App MVP",
+          "setup": "$9,900",
+          "mrr": "$1,490/month",
+          "description": "3 mobile modules, camera/QR, push, offline cache."
+        }
+      },
+      "faq": {
+        "title": "Frequently asked questions",
+        "question1": {
+          "title": "What does 1 flow include?",
+          "answer": "An end-to-end process with 1 trigger and 1 business result, up to 3 systems and 1 channel. With logging, error handling and KPI widget."
+        },
+        "question2": {
+          "title": "Can I add more flows or modules?",
+          "answer": "Yes. Use included hours, extra hours or add add-ons/AI Systems to scale."
+        }
+      },
+      "cta": "Schedule demo"
     },
     "integrations": {
       "title": "Compatible with your favorite tools. You don't change anything.",
